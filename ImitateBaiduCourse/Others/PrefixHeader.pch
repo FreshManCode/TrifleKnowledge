@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  ImitateBaiduCourse
+//
+//  Created by 杨冠军 on 16/7/15.
+//  Copyright © 2016年 豆梦霞. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <MJExtension.h>
+#import "NSObject+propertyCode.h"
+#import "UIImageView+WebCache.h"
+#import "UIView+Constraints.h"
+//引入ReacticeCocoa
+#import <ReactiveCocoa.h>
+//#import <ReactiveCocoa/ReactiveCocoa.h>
+//#import <ReactiveCocoa/RACEXTScope.h>
+//#import <ReactiveCocoa/RACMulticastConnection.h>
+//#import <ReactiveCocoa/UIControl+RACSignalSupport.h>
+//#import <ReactiveCocoa/UIControl+RACSignalSupportPrivate.h>
+#import "NSString+Contraints.h"
+#import "PhotoManager.h"
+#import "API.h"
+#import "NSObject+YYModel.h"
+#import "UIImage+Common.h"
+#import "UIColor+Expanded.h"
+#import "FileManager.h"
+#import "TestMarcos.h"
+#import "UIImage+Common.h"
+#import "BaseViewController.h"
+#import "AlertViewManager.h"
+
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define RGBA(r, g, b, a)    [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r, g, b)        RGBA(r, g, b, 1.0f)
+#define Font(a)     [UIFont systemFontOfSize:a]
+#define ImagePath   @"Image.data"
+#define PlaceHolder [UIImage imageNamed:@"placeholder"]
+#define IsUsefulString(string) string != nil && ![string isKindOfClass:[NSNull class]] && ![string isEqualToString:@" "]
+#endif /* PrefixHeader_pch */

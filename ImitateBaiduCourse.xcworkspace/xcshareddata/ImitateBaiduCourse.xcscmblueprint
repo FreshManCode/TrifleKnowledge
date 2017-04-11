@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "75D160D024004A599C0A4AD4D1DF9F8380DD565D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9F6800A175786DA6D5CF8ABFE0CCE2FDCAD21368" : 0,
+    "75D160D024004A599C0A4AD4D1DF9F8380DD565D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "82783BFD-E59C-4519-999A-A6D886A184EC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9F6800A175786DA6D5CF8ABFE0CCE2FDCAD21368" : "ImitateBaiduCourse\/ImitateBaiduCourse\/",
+    "75D160D024004A599C0A4AD4D1DF9F8380DD565D" : "ImitateBaiduCourse\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ImitateBaiduCourse",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ImitateBaiduCourse.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FreshManCode\/NewImitateBaiduCourse.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "75D160D024004A599C0A4AD4D1DF9F8380DD565D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FreshManCode\/ImitateBaiduCourse.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9F6800A175786DA6D5CF8ABFE0CCE2FDCAD21368"
+    }
+  ]
+}

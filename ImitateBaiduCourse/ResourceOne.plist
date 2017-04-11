@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>nation</key>
+		<string>中国</string>
+		<key>age</key>
+		<string>15</string>
+		<key>name</key>
+		<string>小明</string>
+	</dict>
+	<dict>
+		<key>age</key>
+		<string>17</string>
+		<key>nation</key>
+		<string>中国</string>
+		<key>name</key>
+		<string>笑话</string>
+	</dict>
+	<dict>
+		<key>nation</key>
+		<string>中国</string>
+		<key>age</key>
+		<string>320</string>
+		<key>name</key>
+		<string>李白</string>
+	</dict>
+	<dict>
+		<key>nation</key>
+		<string>中国</string>
+		<key>age</key>
+		<string>10</string>
+		<key>name</key>
+		<string>赵信</string>
+	</dict>
+	<dict>
+		<key>age</key>
+		<string>19</string>
+		<key>nation</key>
+		<string>中国</string>
+		<key>name</key>
+		<string>我是大神</string>
+	</dict>
+	<dict>
+		<key>age</key>
+		<string>17</string>
+		<key>nation</key>
+		<string>中国</string>
+		<key>name</key>
+		<string>仙人友约</string>
+	</dict>
+</array>
+</plist>

@@ -135,11 +135,12 @@
     //上面这种写法更简明,而且键值对出现在对象之前,理解起来较顺畅.此范例代码还说明了使用字面量数值的好处.字典中的对象和键必须都是
     //OC对象,所以不能把整数28直接放进去,而要将其封装在NSNumber实例中才行.使用字面量语法很容易就能做到这一点,只需给数字前加
     //一个@字符即可.
-    
-    
-    
 }
 
+#pragma mark ---- 多用类型常亮,少用#define 预处理指令
+- (void)learnAboutTypeConstant {
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

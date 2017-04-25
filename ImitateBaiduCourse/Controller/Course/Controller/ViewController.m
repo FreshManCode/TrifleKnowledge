@@ -29,6 +29,7 @@
 #import <MWPhotoBrowser.h>
 #import "LearnBlockViewController.h"
 #import "LearnAnimationVC.h"
+#import "ITCaughtExceptionViewController.h"
 
 
 @interface ViewController ()
@@ -479,14 +480,27 @@ NSString * inputReturnString (NSString * paras) {
         [self.navigationController pushViewController:bottomVC animated:YES];
         NSLog(@"点击的是第几个%d----类型为:%d",(int)indexPath.row,(int)cell.cellType);
     } else {
-        CourseListModel *model = [self.recommendArray objectAtIndex:indexPath.row ];
-        LearnBlockViewController *learnVC = [[LearnBlockViewController alloc]init];
-        learnVC.hidesBottomBarWhenPushed  = YES;
-        [self.navigationController pushViewController:learnVC animated:YES];
-        NSLog(@"点击的是第几个%d---%@---类型为:%d",(int)indexPath.row,model.CourseName,(int)cell.cellType);
+        [[AlertViewManager manager]showTitle:@"跳转还是崩溃"
+                                     message:@"前往崩溃界面"
+                                 cancanTitle:@"跳转"
+                                    okAction:^{
+                                        ITCaughtExceptionViewController *exceptionVC =
+                                        [[ITCaughtExceptionViewController alloc]init];
+                                        exceptionVC.hidesBottomBarWhenPushed  = YES;
+                                        [self.navigationController pushViewController:exceptionVC animated:YES];
+                                        
+                                    }
+                                 cancelClick:^{
+                                     CourseListModel *model = [self.recommendArray objectAtIndex:indexPath.row ];
+                                     LearnBlockViewController *learnVC = [[LearnBlockViewController alloc]init];
+                                     learnVC.hidesBottomBarWhenPushed  = YES;
+                                     [self.navigationController pushViewController:learnVC animated:YES];
+                                     NSLog(@"点击的是第几个%d---%@---类型为:%d",(int)indexPath.row,model.CourseName,(int)cell.cellType);
+                                 }];
+        
+        
     }
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    
 }
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
     if (_fpsLabel.alpha ==0) {

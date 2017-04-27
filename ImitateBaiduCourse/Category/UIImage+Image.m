@@ -36,5 +36,36 @@
     return image;
 }
 
++ (UIImage *)scaleImage:(UIImage *)image toScale:(float)scaleSize {
+//    float scale = [UIScreen mainScreen].scale;
+    float scale = scaleSize;
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(image.size.width * scale, image.size.height * scale), YES, 0.0);
+    [image drawInRect:CGRectMake(0, 0, image.size.width * scale, image.size.height * scale)];
+    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return scaledImage;
+}
+- (NSData *)compressImage {
+    NSData *data = UIImageJPEGRepresentation(self, 1.0);
+    if (data.length>50*1000) {
+        if (data.length > 5000 * 1000) {
+            data = UIImageJPEGRepresentation(self, 0.15);
+        }else if (data.length>3000*1000) {//3M以及以上
+            data = UIImageJPEGRepresentation(self, 0.2);
+        } else if (data.length >1500 * 1000 ) {
+            data = UIImageJPEGRepresentation(self, 0.3);
+        } else if (data.length>512*1000) {//0.5M-1M
+            data = UIImageJPEGRepresentation(self, 0.45);
+        } else if (data.length>200*1000) {//0.25M-0.5M
+            data = UIImageJPEGRepresentation(self, 0.6);
+        } else {
+            data = UIImageJPEGRepresentation(self, 0.7);
+        }
+    } else {
+        data = UIImageJPEGRepresentation(self, 0.85);
+    }
+    return data;
+}
+
 
 @end

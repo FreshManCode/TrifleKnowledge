@@ -29,23 +29,25 @@ static NSString * indentifier = @"UITableViewCellIdentifier";
     [super viewDidLoad];
     self.titleLab.text = @"动画学习";
     NSArray *dataArray = @[@[
-                           @{@"clsName":@"YWBasicAnimController",@"title":@"CABasicAnimation基础动画"},
-                           @{@"clsName":@"YWKeyframeAnimController",@"title":@"CAKeyframeAnimation基础动画"},
-                           @{@"clsName":@"YWDrawLineController",@"title":@"画线动画、线条递增、递减动画"},
-                           @{@"clsName":@"YWTransitionViewController",@"title":@"CATransition转场动画"},
-                           @{@"clsName":@"YWSpringAnimViewController",@"title":@"CASpringAnimation弹簧动画"},
-                           @{@"clsName":@"YWEffectiveOCViewContoller",@"title":@"Effectice - OC学习"}],
-                          @[@{@"clsName":@"YWDrawLineController",@"title":@"画线动画"},
-                           @{@"clsName":@"YWWaterWaveController",@"title":@"水波纹效果"},
-                           @{@"clsName":@"YWFireAnimController",@"title":@"粒子动画-火苗效果"},
-                           @{@"clsName":@"YWMenuViewController",@"title":@"菜单弹出动画"},
-                           @{@"clsName":@"YWRegularViewController",@"title":@"正则表达式使用"},
-                           @{@"clsName":@"YWRuntimeViewController",@"title":@"Runtime学习使用"},
-                           @{@"clsName":@"LearnMutilTaskViewController",@"title":@"多线程与内存管理学习"},
-                           @{@"clsName":@"YWBlocksKitViewController",@"title":@"BlocksKit学习"},
-                           ]];
+                               @{@"clsName":@"YWBasicAnimController",@"title":@"CABasicAnimation基础动画"},
+                               @{@"clsName":@"YWKeyframeAnimController",@"title":@"CAKeyframeAnimation基础动画"},
+                               @{@"clsName":@"YWDrawLineController",@"title":@"画线动画、线条递增、递减动画"},
+                               @{@"clsName":@"YWTransitionViewController",@"title":@"CATransition转场动画"},
+                               @{@"clsName":@"YWSpringAnimViewController",@"title":@"CASpringAnimation弹簧动画"},
+                               @{@"clsName":@"YWEffectiveOCViewContoller",@"title":@"Effectice - OC学习"}],
+                           @[@{@"clsName":@"YWDrawLineController",@"title":@"画线动画"},
+                             @{@"clsName":@"YWWaterWaveController",@"title":@"水波纹效果"},
+                             @{@"clsName":@"YWFireAnimController",@"title":@"粒子动画-火苗效果"},
+                             @{@"clsName":@"YWMenuViewController",@"title":@"菜单弹出动画"},
+                             @{@"clsName":@"YWRegularViewController",@"title":@"正则表达式使用"},
+                             @{@"clsName":@"YWRuntimeViewController",@"title":@"Runtime学习使用"},
+                             @{@"clsName":@"LearnMutilTaskViewController",@"title":@"多线程与内存管理学习"},
+                             @{@"clsName":@"YWBlocksKitViewController",@"title":@"BlocksKit学习"},
+                             ],
+                           @[@{@"clsName":@"YWCompressImageViewController",@"title":@"选择图片压缩后上传"},]
+                           ];
     _dataArray       = [NSMutableArray arrayWithArray:dataArray];
-    _sectionTitleArr = [NSArray arrayWithObjects:@"动画基础示例",@"动画常见经典案例", nil];
+    _sectionTitleArr = [NSArray arrayWithObjects:@"动画基础示例",@"动画常见经典案例", @"其他知识学习",nil];
     _contentView     = [[UITableView alloc]initWithFrame:CGRectMake(0, [self getNavHeight], SCREENWIDTH, SCREENHEIGHT - [self getNavHeight]) style:UITableViewStyleGrouped];
     _contentView.delegate   = self;
     _contentView.dataSource = self;

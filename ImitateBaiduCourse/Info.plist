@@ -36,7 +36,7 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>com.nengwu.xunpige</string>
-        <string>TestURLAppTrans</string>
+		<string>TestURLAppTrans</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
@@ -45,8 +45,6 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

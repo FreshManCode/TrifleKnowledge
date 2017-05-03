@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (Image)
-
++ (UIImage *)scaleImage:(UIImage *)image toScale:(float)scaleSize;
+- (NSData *)compressImage;
 @end

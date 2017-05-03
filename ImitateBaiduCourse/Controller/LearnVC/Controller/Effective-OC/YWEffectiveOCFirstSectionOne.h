@@ -7,7 +7,10 @@
 //
 
 #import "BaseViewController.h"
+//声明一个外界可以使用的const 常量,在.m的implementioncation中实现赋值:
+extern NSString *const YWStringNotification;
 
-@interface YWEffectiveOCFirstSection : BaseViewController
+@interface YWEffectiveOCFirstSectionOne : BaseViewController
+
 
 @end

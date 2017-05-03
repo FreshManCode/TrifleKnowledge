@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YWAnimationManager : NSObject
+@interface YWAnimationManager : NSObject 
+
 + (instancetype)sharedAnimateManager;
 //Normal Anim --- 线性函数
 - (CAKeyframeAnimation *)createBasicAnimation:(NSString *)keyPath duration:(CFTimeInterval)duration fromValue:(id)fromValue toVaule:(id)toValue;

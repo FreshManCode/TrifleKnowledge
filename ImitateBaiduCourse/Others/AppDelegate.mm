@@ -11,7 +11,7 @@
 #import "MovieViewController.h"
 #import "SquareViewController.h"
 #import "MusicStockViewController.h"
-#import "UncaughtExceptionHandler.h"
+//#import "UncaughtExceptionHandler.h"
 @interface AppDelegate ()
 
 @end
@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    InstallUncaughtExceptionHandler();
+//    InstallUncaughtExceptionHandler();
 
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setBackgroundColor:[UIColor whiteColor]];

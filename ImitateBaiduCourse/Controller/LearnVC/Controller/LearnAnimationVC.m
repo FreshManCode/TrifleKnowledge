@@ -44,7 +44,8 @@ static NSString * indentifier = @"UITableViewCellIdentifier";
                              @{@"clsName":@"LearnMutilTaskViewController",@"title":@"多线程与内存管理学习"},
                              @{@"clsName":@"YWBlocksKitViewController",@"title":@"BlocksKit学习"},
                              ],
-                           @[@{@"clsName":@"YWCompressImageViewController",@"title":@"选择图片压缩后上传"},]
+                           @[@{@"clsName":@"YWCompressImageViewController",@"title":@"选择图片压缩后上传"},
+                             @{@"clsName":@"YWFitHeightViewControler",@"title":@"精确计算文本高度问题"},]
                            ];
     _dataArray       = [NSMutableArray arrayWithArray:dataArray];
     _sectionTitleArr = [NSArray arrayWithObjects:@"动画基础示例",@"动画常见经典案例", @"其他知识学习",nil];

@@ -174,6 +174,8 @@
 		DF50FB401EB0D8F000184F3C /* YWMeunView.m in Sources */ = {isa = PBXBuildFile; fileRef = 745820C41E4D5CAA00191C5F /* YWMeunView.m */; };
 		DF50FB441EBA013C00184F3C /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF50FB431EBA013C00184F3C /* AppDelegate.mm */; };
 		DF50FB451EBA01C000184F3C /* YWEffectiveOCFirstSectionOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 745979591E94CBA700C3BA75 /* YWEffectiveOCFirstSectionOne.m */; };
+		DF50FB481EBA033800184F3C /* YWFitHeightViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = DF50FB471EBA033800184F3C /* YWFitHeightViewControler.m */; };
+		DF50FB4B1EBA040500184F3C /* YWFitHeightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF50FB4A1EBA040500184F3C /* YWFitHeightTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -513,6 +515,10 @@
 		B07974D71D3F720400F3A9C9 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		B07974DF1D3F72B700F3A9C9 /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
 		DF50FB431EBA013C00184F3C /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		DF50FB461EBA033800184F3C /* YWFitHeightViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWFitHeightViewControler.h; sourceTree = "<group>"; };
+		DF50FB471EBA033800184F3C /* YWFitHeightViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWFitHeightViewControler.m; sourceTree = "<group>"; };
+		DF50FB491EBA040500184F3C /* YWFitHeightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWFitHeightTableViewCell.h; sourceTree = "<group>"; };
+		DF50FB4A1EBA040500184F3C /* YWFitHeightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWFitHeightTableViewCell.m; sourceTree = "<group>"; };
 		EC9433DBC1288B4270495668 /* Pods-ImitateBaiduCourse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImitateBaiduCourse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImitateBaiduCourse/Pods-ImitateBaiduCourse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -702,6 +708,8 @@
 				741EF80C1E779274003A1646 /* YWBlocksKitViewController.m */,
 				9E0F7BA01EB048A600B3DC9B /* YWCompressImageViewController.h */,
 				9E0F7BA11EB048A600B3DC9B /* YWCompressImageViewController.m */,
+				DF50FB461EBA033800184F3C /* YWFitHeightViewControler.h */,
+				DF50FB471EBA033800184F3C /* YWFitHeightViewControler.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -715,6 +723,8 @@
 				745820C71E4D68E500191C5F /* YWMeunLayer.m */,
 				745820C91E4D6EBD00191C5F /* YWAnimationManager.h */,
 				745820CA1E4D6EBD00191C5F /* YWAnimationManager.m */,
+				DF50FB491EBA040500184F3C /* YWFitHeightTableViewCell.h */,
+				DF50FB4A1EBA040500184F3C /* YWFitHeightTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1509,6 +1519,7 @@
 				B07974DA1D3F720400F3A9C9 /* TADotView.m in Sources */,
 				7427DE7B1DF8097B0035B88B /* InsertCollectionView.m in Sources */,
 				74D62D431DAB7E86008AC96E /* BaseViewController.m in Sources */,
+				DF50FB481EBA033800184F3C /* YWFitHeightViewControler.m in Sources */,
 				B07974DB1D3F720400F3A9C9 /* TAPageControl.m in Sources */,
 				B07974D81D3F720400F3A9C9 /* TAAbstractDotView.m in Sources */,
 				74D62D571DAB879A008AC96E /* MusicStockViewController.m in Sources */,
@@ -1544,6 +1555,7 @@
 				745820B71E4D5C8A00191C5F /* BottomPopViewController.m in Sources */,
 				7482C6651E2E10C400947985 /* CaculatorManager.m in Sources */,
 				745820BC1E4D5C8A00191C5F /* YWDrawLineController.m in Sources */,
+				DF50FB4B1EBA040500184F3C /* YWFitHeightTableViewCell.m in Sources */,
 				7479CA0A1D767B6500704345 /* JSWave.m in Sources */,
 				7439FB571DBF020100BB7A83 /* MovieViewController.m in Sources */,
 				74432C1E1DF92B100088F9B9 /* InsertOneImageTableViewCell.m in Sources */,

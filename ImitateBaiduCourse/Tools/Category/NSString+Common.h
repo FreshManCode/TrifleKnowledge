@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (Common)
-
+- (CGSize)boundingRectWithSize:(CGSize)size font:(UIFont*)font  lineSpacing:(CGFloat)lineSpacing;
 
 
 

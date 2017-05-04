@@ -12,5 +12,6 @@
 @interface NSObject (Caculate)
 
 + (int)caculte:(void (^)(CaculatorManager *manager))block;
++ (NSMutableAttributedString *)getAttributeStringWithContent:(NSString *)content lineSpacing:(CGFloat)space wordFont:(UIFont *)font;
 
 @end

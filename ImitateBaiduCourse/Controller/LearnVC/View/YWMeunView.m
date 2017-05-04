@@ -8,7 +8,13 @@
 
 #import "YWMeunView.h"
 #import "YWAnimationManager.h"
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 @interface YWMeunView () <CAAnimationDelegate>
+#else
+@interface YWMeunView ()
+#endif
+
 @property (nonatomic,strong) NSMutableArray *animationQueue;
 
 @end

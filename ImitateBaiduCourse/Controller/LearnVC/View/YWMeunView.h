@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "YWMeunLayer.h"
-@interface YWMeunView : UIView
+@interface YWMeunView : UIView 
 
 @property (nonatomic,strong) YWMeunLayer *menuLayer;
 

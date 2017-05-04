@@ -6,13 +6,15 @@
 //  Copyright © 2017年 能伍网络. All rights reserved.
 //
 
-#import "YWEffectiveOCFirstSection.h"
+#import "YWEffectiveOCFirstSectionOne.h"
 
-@interface YWEffectiveOCFirstSection ()
+@interface YWEffectiveOCFirstSectionOne ()
 
 @end
 
-@implementation YWEffectiveOCFirstSection
+@implementation YWEffectiveOCFirstSectionOne
+//在实现文件中对 YWStringNotification修饰的常量进行赋值
+NSString *const YWStringNotification = @"TestNotification";
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -129,7 +131,6 @@
      nil说明程序有错,而通过异常可以更快地发现这个错误.
      */
     
-    
     //字面量字典
     NSDictionary *personData = @{@"firstName":@"Matt",@"lastName":@"Galloway",@"age":@28};
     //上面这种写法更简明,而且键值对出现在对象之前,理解起来较顺畅.此范例代码还说明了使用字面量数值的好处.字典中的对象和键必须都是
@@ -139,6 +140,35 @@
 
 #pragma mark ---- 多用类型常亮,少用#define 预处理指令
 - (void)learnAboutTypeConstant {
+    static const NSTimeInterval kAnimationDuration = 0.30f;
+    static NSString * const testString = @"ABC";
+    /*若不打算公开某个常量,则应将其定义在该常量的实现文件中.
+    *变量一定同时要使用static与const来声明.如果试图修改由const修饰符所修饰的变量,编译器会报错.
+    *实际上,如果一个变量既声明为static,又声明为const,那么编译器根本就不会创建符号.
+    *有时候需要对外公开某个常量.就好像通知的名字一样,需要字符串来表示此项通知的名字,而这个名字就可以声明为
+    *一个外界可见的常值变量在.h中做如下声明:如该文件中.h
+    */
+    
+    
+    //在.m中 implementication做如下实现:,如本例的实现文件
+    /* 这个常量在头文件中"声明",并且在实现文件中定义.注意const修饰符在常量类型中的位置.常量定义应该从右到左解读,本例中 YWStringNotification 就是一个常量,而这个常量是个指针,指向NSString 对象.
+     编译器看到头文件中的extern 关键字,就知道如何在引入头文件的代码中处理常量了.
+     此类常量必须要定义,而且只能定义一次.通常将其定义与声明该常量相关的头文件中.
+     注意常量的名字.为避免名称冲突,最好用与之相关的类名做前缀.
+     
+     这样定义常量要由于使用#define 预处理指令.
+     要点如下:
+     1.不要用预编译指令定义常量.这样定义出来的常量不含类型信息,编译器只是会在编译前据此执行查找与替换操作.即使
+     有人重新定义了常量值,编译器也不会产生警告信息,这将导致应用程序中的常量值不一致.
+     2.在实现文件中使用static const来定义 "只在编译单元内可见的常量"由于此类常量不在全局符号表中,所以无序为
+     其名称加前缀.
+     3.在头文件中使用extern 来声明全局常量,并在相关实现文件中定义其值.这种常量要出现在全局符号表中,所以其名称
+     应加以区隔,通常用与之相关联的类名做前缀.
+     
+     
+     */
+    
+    
     
 }
 

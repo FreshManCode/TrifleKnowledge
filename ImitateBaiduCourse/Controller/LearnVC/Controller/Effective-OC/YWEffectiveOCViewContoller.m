@@ -7,6 +7,7 @@
 //
 
 #import "YWEffectiveOCViewContoller.h"
+#import "YWEffectiveOCFirstSectionOne.h"
 
 @interface YWEffectiveOCViewContoller () <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) NSMutableArray * dataArray;
@@ -66,6 +67,8 @@ static NSString *indentifier = @"YWEffectiveOCViewContoller";
         BaseViewController *vc = class.new;
         vc.titleLab.text = dataDic[@"title"];
         [self.navigationController pushViewController:vc animated:YES];
+        //用 extern NSString *const YWStringNotification;修饰的
+        NSLog(@"该类中的一个常量是:%@",YWStringNotification);
     }
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }

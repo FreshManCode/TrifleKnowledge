@@ -8,7 +8,7 @@
 
 #import "YWTransitionViewController.h"
 
-@interface YWTransitionViewController () <CAAnimationDelegate>
+@interface YWTransitionViewController ()
 @property (nonatomic,strong) UILabel  *transitionLabel;
 @property (nonatomic,assign) NSInteger  index;
 @property (nonatomic,strong) NSArray *animateArry;

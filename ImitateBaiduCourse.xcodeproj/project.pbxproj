@@ -708,8 +708,8 @@
 				741EF80C1E779274003A1646 /* YWBlocksKitViewController.m */,
 				9E0F7BA01EB048A600B3DC9B /* YWCompressImageViewController.h */,
 				9E0F7BA11EB048A600B3DC9B /* YWCompressImageViewController.m */,
-				DF50FB461EBA033800184F3C /* YWFitHeightViewControler.h */,
 				DF50FB471EBA033800184F3C /* YWFitHeightViewControler.m */,
+				DF50FB461EBA033800184F3C /* YWFitHeightViewControler.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1030,6 +1030,8 @@
 				B01EB1741D38927800F13A83 /* Model */,
 				B01EB1761D38927800F13A83 /* View */,
 				B01EB1731D38927800F13A83 /* Controller */,
+				B07974E51D40751500F3A9C9 /* Square */,
+				B07974E41D40751500F3A9C9 /* Movie */,
 				B01EB1481D3891FF00F13A83 /* Main.storyboard */,
 				B01EB14B1D38920000F13A83 /* Assets.xcassets */,
 				B01EB14D1D38920000F13A83 /* LaunchScreen.storyboard */,
@@ -1097,8 +1099,6 @@
 				74D62D4E1DAB847D008AC96E /* Music */,
 				7479CA021D7665CD00704345 /* Login */,
 				B07974E11D40751500F3A9C9 /* Course */,
-				B07974E41D40751500F3A9C9 /* Movie */,
-				B07974E51D40751500F3A9C9 /* Square */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1278,7 +1278,8 @@
 				7439FB521DBF020100BB7A83 /* Model */,
 				7439FB531DBF020100BB7A83 /* View */,
 			);
-			path = Movie;
+			name = Movie;
+			path = Controller/Movie;
 			sourceTree = "<group>";
 		};
 		B07974E51D40751500F3A9C9 /* Square */ = {
@@ -1288,7 +1289,8 @@
 				747448981DD5998E00518F74 /* Model */,
 				747448991DD5998E00518F74 /* View */,
 			);
-			path = Square;
+			name = Square;
+			path = Controller/Square;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
